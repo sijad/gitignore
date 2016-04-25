@@ -48,7 +48,7 @@ function gitignore -d "Create .gitignore easily using gitignore.io"
 
     if test ! -s $cache_templates -o $update -ne 0
         if not __gitignore_run "Update templates" "
-            curl --max-time 10 -sS '$gitignoreio_url/list' | tr ',' '\n' > $cache_templates
+            curl --max-time 10 -sS '$gitignoreio_url/list' | tr ',' ' ' | tr '\n' ' ' > $cache_templates
             "
             echo "gitignore: can not fetch templates list from gitignore.io." > /dev/stderr
             return 1

@@ -4,4 +4,4 @@ if test -z "$cache_home"
 end
 set -l cache_templates "$cache_home/gitignore_templates"
 
-complete -c gitignore -a (cat "$cache_templates" | tr '\n' ' ') -f
+complete -c gitignore -a (cat "$cache_templates") -f
