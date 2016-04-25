@@ -3,7 +3,7 @@
 
 # gitignore
 
-gitignore create .gitignore from downloaded templates from gitignore.io
+Create .gitignore files from a [gitignore.io] template.
 
 ## Install
 
@@ -21,13 +21,13 @@ gitignore osx c++
 
 ## Options
 
-* -u, --update:
-    Update templates list.
+* -u, --update
+    Update template list.
 
-* -o, --outout=file:
-    Save created template to file.
+* -o, --output=*file*
+    Save created template to *file*.
 
-* -h, --help:
+* -h, --help
     Show usage help.
 
 
@@ -36,3 +36,4 @@ gitignore osx c++
 [slack-link]: https://fisherman-wharf.herokuapp.com
 [slack-badge]: https://fisherman-wharf.herokuapp.com/badge.svg
 [fisherman]: https://github.com/fisherman/fisherman
+[gitignore.io]: https://gitignore.io
