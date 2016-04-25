@@ -21,13 +21,13 @@ gitignore osx c++
 
 ## Options
 
-* -u, --update
+* -u, --update:
     Update template list.
 
-* -o, --output=*file*
+* -o, --output=*file*:
     Save created template to *file*.
 
-* -h, --help
+* -h, --help:
     Show usage help.
 
 
