@@ -13,13 +13,13 @@ With [fisherman]
 fisher gitignore
 ```
 
-## USAGE
+## Usage
 
 ```fish
 gitignore osx c++
 ```
 
-## OPTIONS
+## Options
 
 * -u, --update:
     Update templates list.
@@ -31,8 +31,8 @@ gitignore osx c++
     Show usage help.
 
 
-[travis-link]: https://travis-ci.org/sijad/gitignore
-[travis-badge]: https://img.shields.io/travis/sijad/gitignore.svg
+[travis-link]: https://travis-ci.org/fisherman/gitignore
+[travis-badge]: https://img.shields.io/travis/fisherman/gitignore.svg
 [slack-link]: https://fisherman-wharf.herokuapp.com
 [slack-badge]: https://fisherman-wharf.herokuapp.com/badge.svg
 [fisherman]: https://github.com/fisherman/fisherman
