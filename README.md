@@ -3,7 +3,7 @@
 
 # gitignore
 
-Create .gitignore files from a [gitignore.io] template.
+Create .gitignore files from gitignore.io templates.
 
 ## Install
 
