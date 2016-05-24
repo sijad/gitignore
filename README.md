@@ -5,9 +5,9 @@
 
 [![Slack Room][slack-badge]][slack-link]
 
-# gitignore
+# Gitignore
 
-Create .gitignore files from gitignore.io templates.
+Create .gitignore files from <https://www.gitignore.io> templates.
 
 ## Install
 

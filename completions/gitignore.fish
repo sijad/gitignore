@@ -1,7 +1,10 @@
-set -l cache_home $XDG_CACHE_HOME
-if test -z "$cache_home"
-    set cache_home ~/.cache
-end
-set -l cache_templates "$cache_home/gitignore_templates"
+set -l cache $XDG_CACHE_HOME
 
-complete -c gitignore -a (cat "$cache_templates") -f
+if test -z "$cache"
+    set cache ~/.cache
+end
+
+if test -s "$cache/gitignore_templates"
+    read -laz t < "$cache/gitignore_templates"
+    complete -c gitignore -a "$t" -f
+end
