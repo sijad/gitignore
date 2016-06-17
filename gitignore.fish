@@ -67,7 +67,7 @@ function gitignore -d "Create .gitignore easily using gitignore.io"
     set templates (printf ',%s' $templates | cut -c2-)
 
     if not __gitignore_run "Fetch template" "
-        curl --max-time 10 -sS '$gitignoreio_url/$templates' | tr ',' '\n' > $output
+        curl --max-time 10 -sS '$gitignoreio_url/$templates' > $output
         "
         echo "gitignore: can not fetch template from gitignore.io." > /dev/stderr
         return 1
