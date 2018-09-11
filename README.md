@@ -1,6 +1,4 @@
-[slack-link]: https://fisherman-wharf.herokuapp.com
-[slack-badge]: https://fisherman-wharf.herokuapp.com/badge.svg
-[fisherman]: https://github.com/fisherman/fisherman
+[fisher]: https://github.com/jorgebucaran/fisher
 [gitignore.io]: https://gitignore.io
 
 [![Slack Room][slack-badge]][slack-link]
@@ -11,7 +9,7 @@ Create .gitignore files from <https://www.gitignore.io> templates.
 
 ## Install
 
-With [fisherman]
+With [fisher]
 
 ```
 fisher sijad/gitignore
