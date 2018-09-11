@@ -1,8 +1,6 @@
 [fisher]: https://github.com/jorgebucaran/fisher
 [gitignore.io]: https://gitignore.io
 
-[![Slack Room][slack-badge]][slack-link]
-
 # Gitignore
 
 Create .gitignore files from <https://www.gitignore.io> templates.
