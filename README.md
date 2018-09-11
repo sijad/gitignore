@@ -14,7 +14,7 @@ Create .gitignore files from <https://www.gitignore.io> templates.
 With [fisherman]
 
 ```
-fisher gitignore
+fisher sijad/gitignore
 ```
 
 ## Usage
