@@ -1,16 +1,13 @@
-[fisher]: https://github.com/jorgebucaran/fisher
-[gitignore.io]: https://gitignore.io
-
 # Gitignore
 
-Create .gitignore files from <https://www.gitignore.io> templates.
+Create `.gitignore` files from [gitignore.io](https://www.gitignore.io) templates.
 
 ## Install
 
-With [fisher]
+With [Fisher](https://github.com/jorgebucaran/fisher)
 
 ```
-fisher sijad/gitignore
+fisher add sijad/gitignore
 ```
 
 ## Usage
@@ -21,11 +18,15 @@ gitignore osx c++
 
 ## Options
 
-* -u, --update:
+* `-u`, `--update`:
     Update template list.
 
-* -o, --output=*file*:
-    Save created template to *file*.
+* `-o`, `--output=FILE`:
+    Save generated template to `FILE`.
 
-* -h, --help:
+* `-h`, `--help`:
     Show usage help.
+
+## License
+
+Gitignore is MIT licensed. See [LICENSE](LICENSE).
