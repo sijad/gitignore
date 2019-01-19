@@ -1,6 +1,6 @@
 # Gitignore
 
-Create `.gitignore` files from <https://www.gitignore.io> templates.
+Create `.gitignore` files from [gitignore.io](https://www.gitignore.io) templates.
 
 ## Install
 
@@ -29,4 +29,4 @@ gitignore osx c++
 
 ## License
 
-Gitignore is MIT licensed. See [LICENSE](LICENSE)
+Gitignore is MIT licensed. See [LICENSE](LICENSE).
