@@ -1,6 +1,6 @@
 # Gitignore
 
-Create `.gitignore` files from [gitignore.io](https://www.gitignore.io) templates.
+Create `.gitignore` files from [gitignore.io](https://www.toptal.com/developers/gitignore) templates.
 
 ## Install
 

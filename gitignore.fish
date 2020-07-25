@@ -11,7 +11,7 @@ function gitignore -d "Create .gitignore easily using gitignore.io"
     set -l templates
     set -l update 0
     set -l cache_home $XDG_CACHE_HOME
-    set -l gitignoreio_url "https://www.gitignore.io/api/"
+    set -l gitignoreio_url "https://www.toptal.com/developers/gitignore/api/"
 
     if test -z "$cache_home"
         set cache_home ~/.cache
