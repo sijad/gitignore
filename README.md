@@ -4,10 +4,10 @@ Create `.gitignore` files from [gitignore.io](https://www.toptal.com/developers/
 
 ## Install
 
-With [Fisher](https://github.com/jorgebucaran/fisher)
+Install with [Fisher](https://github.com/jorgebucaran/fisher)
 
 ```
-fisher add sijad/gitignore
+fisher install sijad/gitignore
 ```
 
 ## Usage
