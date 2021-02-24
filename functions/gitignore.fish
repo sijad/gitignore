@@ -1,9 +1,7 @@
 function gitignore -d "Create .gitignore easily using gitignore.io"
-    function __gitignore_run -a msg command
-        if not spin "$command" -f "\r @ $msg\r\n" --error=/dev/null
-            printf " × $msg\n"
-            return 1
-        end
+    function __gitignore_run -a msg _command
+        echo "Working..."
+        fish --command "$_command"
         printf " ✓ $msg\n"
     end
 
@@ -19,31 +17,26 @@ function gitignore -d "Create .gitignore easily using gitignore.io"
 
     set -l cache_templates "$cache_home/gitignore_templates"
 
-    getopts $argv | while read -l 1 2
-        switch "$1"
-            case _
-                set templates $templates $2
+    argparse 'h/help' 'u/update' 'o/output=' -- $argv
+    or return
 
-            case u update
-                set update 1
+    if set -q _flag_help
+        printf "Usage: gitignore [--update] template [templates...] \n"
+        printf "                 [--output=<file>] [--help]\n\n"
 
-            case o outout
-                set output $2
-
-            case h help
-                printf "Usage: gitignore [--update] template [templates...] \n"
-                printf "                 [--output=<file>] [--help]\n\n"
-
-                printf "     -u --update              Update templates file\n"
-                printf "     -o --output=<file>       Write output to <file>\n"
-                printf "     -h --help                Show this help\n"
-                return
-
-            case \*
-                printf "gitignore: '%s' is not a valid option\n" $1 >& 2
-                gitignore --help >& 2
-                return 1
-        end
+        printf "     -u --update              Update templates file\n"
+        printf "     -o --output=<file>       Write output to <file>\n"
+        printf "     -h --help                Show this help\n"
+        return
+    end
+    if set -q _flag_update
+        set update 1
+    end
+    if set -q _flag_output
+        set output _flag_output
+    end
+    if set -q argv[1]
+        set templates $templates "$argv[1]"
     end
 
     if test ! -s $cache_templates -o $update -ne 0
@@ -67,7 +60,7 @@ function gitignore -d "Create .gitignore easily using gitignore.io"
     set templates (printf ',%s' $templates | cut -c2-)
 
     if not __gitignore_run "Fetch template" "
-        curl --max-time 10 -sS '$gitignoreio_url/$templates' > $output
+        curl --max-time 10 -sS '$gitignoreio_url$templates' > $output
         "
         echo "gitignore: can not fetch template from gitignore.io." > /dev/stderr
         return 1
