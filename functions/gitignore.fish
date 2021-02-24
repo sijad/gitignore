@@ -33,7 +33,7 @@ function gitignore -d "Create .gitignore easily using gitignore.io"
         set update 1
     end
     if set -q _flag_output
-        set output _flag_output
+        set output $_flag_output
     end
     if set -q argv[1]
         set templates $templates "$argv[1]"
